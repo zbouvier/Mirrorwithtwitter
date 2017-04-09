@@ -120,12 +120,9 @@ header {
 .weather-info-icon {
 	float: left;
 }
-iframe[id^='twitter-widget-0']{position: absolute; top: 50%; bottom:50% !important}
+iframe[id^='twitter-widget-0']{position: absolute !important; top: 50%; bottom:50% !important}
 iframe[id^='twitter-widget-0']{width: 220px !important;}
 iframe[id^='twitter-widget-0']{height: 200px !important;}
-iframe[id^='twitter-widget-0']{!important}\
-iframe[id^='twitter-widget-']{}
-
 
 footer {
    position:absolute;
