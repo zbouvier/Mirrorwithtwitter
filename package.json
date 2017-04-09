@@ -1,0 +1,22 @@
+{
+  "name": "zbouvier_mirror",
+  "version": "0.0.5",
+  "description": "Class Project/Capstone for Zach Bouvier",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/zbouvier/Mirror",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Zach Bouvier",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
