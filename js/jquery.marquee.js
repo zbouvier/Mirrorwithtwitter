@@ -1,7 +1,3 @@
-/**
-* author Remy Sharp
-* url http://remysharp.com/tag/marquee
-*/
 
 (function ($) {
     $.fn.marquee = function (klass) {
@@ -11,7 +7,7 @@
         // works out the left or right hand reset position, based on scroll
         // behavior, current direction and new direction
         function getReset(newDir, marqueeRedux, marqueeState) {
-            var behavior = marqueeState.behavior, width = marqueeState.width, dir = marqueeState.dir;
+            var behavior = marqueeState.behavior, width = (marqueeState.width) , dir = marqueeState.dir;
             var r = 0;
             if (behavior == 'alternate') {
                 r = newDir == 1 ? marqueeRedux[marqueeState.widthAxis] - (width*2) : width;
@@ -42,7 +38,6 @@
                 marqueeState = $marqueeRedux.data('marqueeState');
 
                 if ($marqueeRedux.data('paused') !== true) {
-                    // TODO read scrollamount, dir, behavior, loops and last from data
                     marqueeRedux[marqueeState.axis] += (marqueeState.scrollamount * marqueeState.dir);
 
                     // only true if it's hit the end
