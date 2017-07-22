@@ -52,7 +52,7 @@ function updateWeather() {
 }
 
 function getNews() {
-	$.get('http://hosted2.ap.org/atom/APDEFAULT/386c25518f464186bf7a2ac026580ce7', function (data) {
+	$.get('http://feeds.feedburner.com/FeaturedPosts-IotCentral?format=atom', function (data) {
     $(data).find("entry").each(function () { // or "item" or whatever suits your feed
       var el = $(this);
       $('marquee').append(' <span>&middot;</span> ' + el.find("title").text());
