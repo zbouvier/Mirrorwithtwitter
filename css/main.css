@@ -122,7 +122,7 @@ header {
 }
 iframe[id^='twitter-widget-0']{position: absolute !important; bottom: 0% !important; right: 0%}
 iframe[id^='twitter-widget-0']{width: 240px !important;}
-iframe[id^='twitter-widget-0']{height: 200px !important;}
+iframe[id^='twitter-widget-0']{height: 400px !important;}
 iframe[id^='twitter-widget-0']{!important}
 iframe[id^='twitter-widget-']{}
 
